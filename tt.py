@@ -1,291 +1,236 @@
 import streamlit as st
+# import numpy as np
+# import pandas as pd
+import os
+os.system('cls')
 import matplotlib.pyplot as plt
 
-fig, ax = plt. subplots()
-c1 = st.sidebar.radio('선의 색을 선택하시오', ['red', 'green', 'blue', 'purple', 'orange'])
-s1 = st.sidebar.radio('선의 스타일을 선택하시오', ['-', '--', ':', '-.'])
-m1 = st.sidebar.radio('점의 모양을 선택하시오',['o', '^', 's', 'p'])
+col1, col2 = st.columns([1, 2])
+with col1:
+    'ICT재난안전관리21683032'
+    '김승환'
+    st.image('빵빵이.jpg')
+with col2:
+    '건양대학교 재난안전소방학과 김승환 입니다. 잘부탁드립니다.'
+    '전화번호(📞) : 010-5610-0481'
+    '이메일(📧) : rkflsl96@naver.com'
+    '주소(🏠) : 천안시 목천읍 신계리 이수프라임아파트'
+    '자격증 : 지게차 기능사, 운전면허 1 종 '
 
-a = st.number_input('a의 값을 입력하시오', value=2.0, step=1.0)
-b = st.number_input('b의 값을 입력하시오', value=-1.0, step=1.0)
-c = st.number_input('c의 값을 입력하시오', value=15.0, step=1.0)
-d = st.number_input('d의 값을 입력하시오', value=2000.0, step=100.0)
-
-
-x = []
-y1 = []
-y2 = []
-for i in range(-29, 30, 3):
-    x.append(i)
-    y1.append(a*i*i + b*i + c)
-    y2.append(d/i)
-
-plt.plot(x, y1, color = c1, linestyle = s1, marker = m1)
-st.pyplot(fig)
-
-# a = st.number_input('a의 값을 입력하시오', value=2.0, step=1.0)
-# b = st.number_input('b의 값을 입력하시오', value=-1.0, step=1.0)
-# c = st.number_input('c의 값을 입력하시오', value=15.0, step=1.0)
-# d = st.number_input('d의 값을 입력하시오', value=2000.0, step=100.0)
-
-# x = []
-# y = []
-# for i in range(-20,21,1):
-#     x.append(i)
-#     y.append(-2*i*i+ + 3*i +5)
-
-# plt.plot(x,y,color = 'red', linestyle = '--', marker = 'p')
+''
+'-----------------------'
+col = st.columns(4)
+with col[0]:
+    st.link_button("Google(🌐)", "https://google.com")
+with col[1]:
+    st.link_button("Naver(✅)", "https://naver.com")
+with col[2]:
+    st.link_button("Daum(🇩)", "https://daum.net")
+with col[3]:
+    st.link_button("Facebook(ⓕ)", "https://facebook.com")
 
 
+'## :red[자기소개]'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import sys
-# sys. exit()
-# import streamlit as st
-# # import time 
-# # import random as r
-# import matplotlib.pyplot as plt
-# import numpy as np
-
-
-# col1, col2, col3 = st. columns(3)
-
-# with col1:
-#     c1 = st. radio('선을 색을 선택하세요!',['red','green','blue','black'])
-# with col2:
-#     s1 = st. radio('선을 형태를 선택하세요~',['-',':','-.','--'])
-# with col3:
-#     t1 = st. radio('점의 모양을 선택하새요',['o','h','s','p','^'])
+'안녕하세요'
+'저는 고등학교를 졸업하자마 바로 취업을 하였습니다.'
+'현장에서 전기일을 2년 동안 했습니다.'
+'일을 해보니까 자격증이 필요하고 대학교를 나오면 더욱 좋겠다 싶어서 학점은행제를 알아보게 되었고'
+'학점은행제를 통해 학점을 쌓고 편입을 하여서 건양대에 오게 되었습니다.'
+'저의 장점은 젊은 나이에 사회생활을 경험했고 현장이 어떻게 돌아가고 사람은 어떻게 대하는지에 대해 잘압니다.'
+'저의 특기 및 취미는 중학교때 축구부를 해서 축구를 좋아하고 체력이 좋습니다.'
 # fig, ax = plt.subplots()
 
-
-# x=[]
-# y=[]
-# for i in range(-20,21,2):
-#     x.append(i)
-#     y.append(-2*i*i +3*i +5)
-
-# plt.plot(x,y,color = c1, linestyle = s1, marker = t1)
-# st.pyplot(fig)
-
-
-# fig, ax = plt. subplots()
-
-# plt. plot(x, y)
-# st.pyplot(fig)
-
-# x =[]
-# for i in range(-100, 101):
-#     i
-# #     x.append(i)
-# # x
+# x = [-10, -9, -8, -7, -6]
+# x
 
 # x = []
-# y=[]
-# for i in range(-100, 101):
-#     x.append(1/10.0)
-#     y.apprend(2*i*i+5*i+3)
-
-
-
 # y = []
-# # s = [7, 1, 9, -3, 3, 10]
-# # s
-# # a = sum(s)
-# # 'sum', a
-# # mx = max(s)
-# # 'max', mx
-# # mn = min(s)
-# # 'min', mn
+# for i in range(-10, 11, 2):
+#     x.append(i)
+#     y.append(3*i**3 - 5*i**2 + 3*i - 7)
 
-# # mx = -1e10
-# # mx
-# # for i in s:
-# #     if i > mx:
-# #         mx = i
-# # mx
+# cc = st.radio('선의 색을 선택하시오.', ['red', 'green', 'blue', 'orange'])
+# ma = st.radio('마커의 형태를 선택하시오', ['o', '^', 's', 'p', 'h'])
+# ls = st.radio('선의 형태를 선택하시오', ['-', '-.', ':', '--'])
+# # plt.plot(x, y, '-.go')
+# plt. plot(x, y, color=cc, linestyle=ls, marker=ma)
+# st.pyplot(fig)
+
+# x[0]
 
 
+# x = []
+# y = []
+# for i in range (-100, 101, 5):
+#     x.append(i)
+#     y.append(2*i**3 - 5*i**2 + 3*i -7)
 
-# # s1 = 1
-# # s2 = 2
-# # s3 = 3
-# # s4 = 4
-# # s5 = 5
-# # s1, s2, s3, s4, s5
-
-# # s = ['a', 'b', 'c', 'd', 'e']
-# # s[-1]
-
-# # if 'r' not in s:
-# #     '1'
-# # else:
-# #     '2'
-
-# # import turtle
-# # t = turtle.Turtle()
-# # t.shape("turtle")
-
-
-
-# # def square(x, y, lx, ly ):
-# #     t.up()
-# #     t.goto(x, y)
-# #     t.down()
-# #     for i in range(2):
-# #         t.forward(lx)
-# #         t.left(90)
-# #         t.forward(ly)
-# #         t.left(90)
-
-# # square(-200, 0, 100, 50)
-# # square(0, 0, 100, 150)
-# # square(200, 0, 100, 100)
-
-# # turtle.done()
-
-# # import time
-
-# # def user_sum(n):
-# #     s = 0
-# #     for i in range(1, n+1):
-# #         s = s + i
-# #     s
-
-# # user_sum(100)
-# # user_sum(200)
-
-# # s = 0
-# # for i in range(10, 21):
-# #     s = s + i
-# # s
-
-
-# # import turtle
-# # t  = turtle.turtle()
-# # t. shape('turtle')
-# # t.speed(1)
-
-# # length = 5
-# # for i in range(8):
-# #     t.forward(length)
-# #     t.rigth(89)
-# #     length += 5
+# col1, col2, col3 = st.columns(3)
+# with col1:
+#     color = st.radio('색을 선택하시오.', ('red', 'green', 'blue'))
+# with col2:
+#     linestyle = st.radio('선의 스타일을 선택하시오.', ('-', '-.', ':'))
+# with col3:
+#     marker = st.radio('마커의 스타일을 선택하시오.', ('s', '^', 'o'))
 
 
 
 
-# # s = 50
-# # if s >= 90:
-# #     st.write('귀하의 점수는' + str(s) + '점으로 :red[합격] 입니다')
-# # elif s >=80:
-# #     '귀하의 점수는' + str(s) + '점으로 불합격 입니다.'
-# # elif s >=70:
-# #     '귀하의 점수는' + str(s) + '점으로 불합격 입니다.'
-# # elif s >=60:
-# #     '귀하의 점수는' + str(s) + '점으로 불합격 입니다.'
-# # else:
-# #     '귀하의 점수는' + str(s) + '점으로 불합격 입니다.'
+# li = [1, 2, 3, 4]
+# n = np.array(li)
+# p = pd.Series(li, index=['addd', ''])
+# import streamlit as st
+
+# list1 = list([['한빛', '남자', '20', '180'],
+#               ['한결', '남자', '21', '177'],
+#               ['김한결', '중성', '51', '155'],
+#               ['한라', '여자', '20', '160']])
+# n = np.array(list1)
+# col_name = ['이름', '성별', '나이', '키']
+# df = pd.DataFrame(list1, columns=col_name, index=['1행', '2행', '3행', '4행'])
+# df
+
+# genre = st.radio("선택하시오.",
+#                  ["오름차순","내림차순", "기타", "요약"],
+#                  horizontal=True, index=2)
+# number = st.number_input('Insert a number', value=20, step=1)
+# df.iloc[3, 2] = number
+
+# if '오름' in genre:
+#     st.dataframe(df.sort_values(by=['키']))
+# if '내림' in genre:
+#     st.dataframe(df.sort_values(by=['키'], ascending=False))
+# if '기타' in genre:
+#     st.dataframe(df)
+# if '요약' in genre:
+#     st.dataframe(df)
+    
+# genre = st.radio(
+#     "What's your favorite movie genre",
+#     [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
+#     index=None,
+# )
+
+# st.write("You selected:", genre)
+
+# for i  in range(4):
+#     li[i] = li[i] + 3
+# li
+# li = np.array([7, 2, 5, 4])
+# li
+# li_sort = np.sort(li)[::-1]
+# li_sort
+
+# import sys
+# sys.exit()
+
+
+# import turtle
+# import random
+# t1 = turtle.Turtle()
+# t1.shape('turtle')
+
+# t1.width(5)
+# t1.color('red')
+# t1.penup()
+# t1.goto(-100, 100)
+# t1.pendown()
+# t1.forward(100)
+
+# t2 = turtle.Turtle()
+# t2.shape('turtle')
+# t2.width(5)
+# t2.color('bule')
+# t2.goto(-100, 100)
+# t2.pendown()
+# t2.forward(100)
+
+# for i in range(30):            
+#     d1 = random.randint(1, 60)
+#     t1.forward(d1)
+#     d2 = random.randint(1, 60)
+#     t2.forward(d2)
+
+# n = np.full((4, 5 ), 10)
+# n
+
+# n1 = np.zeros((4, 5))
+# n1
+# for i in range(4):
+#     for j in range(5):
+#         n1[i, j] = 10
+# n1
+
+# n2 = []
+# n2 .append(10)
+# n2
+# np.append(n2, 15)
+# n2
+
+# arr = np.array[1, 2, 3]
+# s = arr.sum()
+# s
+# s1 = np.sum(arr)
+# s1
+
+# 
+# a = np.arange(8)
+# a
+# a.shape = (4, 2)
+# a
+# b = a.flatten()
+# b
+# b = b.resize((2,4))
+# b
+# c = np.resize(b, (2,4))
+# c
+
+# import os
+# os.system('cls')
+
+# a = np.array([1, 10, -5, 2])
+# print(np.abs(a))
+# print(np.sqrt(a))
+# print(a**0.5)
+# print(np.square(a))
+# print(a**2)
 
 
 
-# # a = 1
-# # b = '1'
-# # c = "1"
-
-# # print('a=',a)
-# # 'a=', a
-# # b
-# # c
-
-
-
-# # for i in range(3. 10, 2):
-# #     's = ', s, 'i =', i
-# #     s = s + i
-# #     's + i = ', s
-# # s = 1 + 2 + 3 + 4 + 5
-# # s
-
-# # '7과 4의 연산'
-
-# # '덧셈', 7 + 4
-# # '뺄셈', 7 - 4
-# # '곱셈', 7 * 4
-# # '몫', 7 // 4
-# # '나눗셈', 7 / 4
-# # '나머지', 7 % 4
-# # '거듭제곱',7 ** 4
-
-# # import turtle
-# # t = turtle.Turtle()
-# # t.shape('turtle')
-# # t.speed(1)
 
 
 
 
 
-# # turtle.done()
 
-# # t.fillcolor("blue")
-# # t.begin_fill()
-# # t.circle(100)
-# # t.end_fill()
+# list1 = [[1, 2, 3, 4], [3,5,7,9]]
+# a = np.array(list1) 
+# a
+# a.shape
+# s = a.sum(axis=0)
+# s
+# mn = a.min(axis=1)
+# mn
+# a[1, 2] = 30
 
-# # t.forward(100)
+# a = np.zeros(2)
+# a
+# b = np.zeros((2,2))
+# b
+# c = np.ones((2,3))
+# c
+# d = np.full((2,3), 5)
+# d
+# e = np.eye(3)
+# e
 
-# # t.fillcolor("orange")
-# # t.begin_fil
-# # )
-# # r =20
-# # area = 3.14*r*r
-# # area
-
-# # distance =150
-# # angle =120
-# # for i in range(3):
-# #     t.forward(distance)
-# #     t.left(angle)
-
-
-# # t.forward(100)
-# # t.right(90)
-# # t.forward(100)
-# # t.right(90)
-# # t.forward(100)
-# # t.right(90)
-# # t.forward(100)
-# # turtle.done()
-
-
-# # a = 3.141592*10*10.0
-# # b = (1/100)*1234*55
-
-# # print("hello")
-
-# # st.write("hello")
-
-# # st.write("고양이 + 강아지")
-
-# # st.write("반가워요")
-
-# # print("파이썬")
-# # a=2+3+8
-# # a
-# # print(a)
-# # st.write('스트림릿')
-# # st.title('streamlit image')
-# # st.image('im.jfif')
+# # a.ndim
+# # n = np.ndim()
+# # def user_eye(n):
+# #     arr = np.zeros((n,n))
+# #     for i in range(n):
+# #         for j in range(n):
+# #             if i == j:
+# #                 arr[i, j] = 1
+# #                 return arr
